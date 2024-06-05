@@ -1,8 +1,23 @@
  /*** 'If' Conditional statements ***/
 
 // 1. Declare two variables: 'userName' with your username ; and 'isLoggedIn'with true as value.
-
+const userName = 'deep0033'
+const isLoggedIn = true
+const role = 'admin'
 // 2. Display the message 'Welcome, <username>' only if the user is logged in; output the message using the HTML element with id 'loginMessage'
+const $loginMessage = document.getElementById('loginMessage')
+if (isLoggedIn === true){
+    // $loginMessage.textContent = 'Welcome, ' + userName
+       // $loginMessage.textContent = 'Welcome,<username>'
+ if(role == 'admin'){
+    $loginMessage.textContent ='Welcome, ' + username + '. You have access to all features.'
+ } else {
+    $loginMessage.textContent = 'Welcome, ' + userName + '. You can change the content.'
+ }
+
+} else {
+    $loginMessage.textContent = 'Welcome guest!'
+}
 
 // 3. Display a different message when the user is not logged in.
 
@@ -13,10 +28,19 @@
 /*** 'Switch' Conditional statements ***/
 // 1. Declare the following variables
     //'$loginStatus' with the reference to the DOM element that contains the ID 'loginStatus'
+    
     //'loginCase' with 0 as value
-    //'loginIcon' without any value assigned to it.
+    //'login   Icon' without any value assigned to it.
 
 // 2. Create a switch statement to compare values from 0 to 3
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
 
     //Assign the string value representing the name of an image to the 'loginIcon' variable for each case.
 
@@ -45,9 +69,13 @@ function toggleDarkMode(){
 /*** Functions ***/
 
 // 1. String functions
-
+console.log('Hello'.toUpperCase())
+console.log(Math.round(Math.random()*5))
 // 2. Write a function that prints in the console the parameters 'firstName' and 'lastName'
-
+function printName(firstName, lastName){
+    console.log('Hello' ${firstName} ${lastName})
+}
+printName('deep','sandhu')
 // 3.Write a function that prints a new blog in the document
 
 // Declare the function 'addPost' that receives two parameters. Those parameters are going to be used to displaye the blog's title and category.

@@ -24,16 +24,22 @@
 
 /*** Traversing the DOM  ***/
 // Return all child elements of the main node
-// Return the first child node(that is an element node) of main
-// Return the next sibling element of main
+console.log($main.children)
 
+// Return the first child node(that is an element node) of main
+console.log(main.firstElementchild)
+
+// Return the next sibling element of main
+console.log(main.nextElementSibling)
 
 
 /*** Manipulating attributes */
 //Obtain the href attribute of $navFirstOption
+console.log($firstNavlink.getAttribute('.href'))
 
 //exception calling attributes as properties
 // console.log( $main.className )
+
 
 //setAttribute()    
 //Set the ID 'hero' on the first 'div' element inside the 'main' element.
@@ -99,7 +105,10 @@ const blogs = [
     }
 ]
 // Set the first post title using textContent
-
-
+const $postTitle = document.querySelector('.post-title')
+$postTitle.texContent = blogs[0].title
 
 // Set the first post using innerHTML
+
+const $post = document.querySelector('.post')
+$post.innerHTML
